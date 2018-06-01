@@ -1,5 +1,4 @@
-Set-Alias python "python.exe"
-Set-Alias pip "pip.exe"
+Set-Alias bash "bash -c 'zsh'"
 Set-PSReadlineOption -BellStyle None
 function Invoke-CommandRunAs
 {
