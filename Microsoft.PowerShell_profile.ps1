@@ -1,4 +1,4 @@
-Set-Alias bash "bash -c 'zsh'"
+Set-Alias bash wsl
 Set-PSReadlineOption -BellStyle None
 function Invoke-CommandRunAs
 {
