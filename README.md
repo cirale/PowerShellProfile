@@ -19,5 +19,6 @@
 
    ```
    cinst packages.config -y
-
    ```
+   
+このリポジトリをそのまま`%USERPROFILE%\Documents\WindowsPowerShell\`に保存するのが一番楽かもしれない
