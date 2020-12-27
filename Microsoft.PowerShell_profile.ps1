@@ -21,3 +21,6 @@ function Start-RunAs
 }
 
 Set-Alias su Start-RunAs
+
+Import-Module PSReadLine
+Set-PSReadlineOption -EditMode Emacs
