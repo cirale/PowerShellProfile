@@ -8,6 +8,9 @@ taskkill /f /im explorer.exe
 Start-Sleep 1
 Start-Process explorer.exe
 
+# capslock -> ctrl
+Set-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout" -name "Scancode Map" -Value ([byte[]](0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x03,0x00,0x00,0x00,0x1d,0x00,0x3a,0x00,0x3a,0x00,0x3a,0x00,0x00,0x00,0x00,0x00))
+
 # Remove pre-install apps
 Get-AppxPackage Microsoft.MicrosoftOfficeHub | Remove-AppxPackage
 Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
